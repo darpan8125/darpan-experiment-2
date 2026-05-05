@@ -1,3 +1,7 @@
+
+
+
+
 <!--<!DOCTYPE html>
 <html>
 <head>
@@ -86,3 +90,230 @@
     </table>
 </body>
 </html>
+
+table 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Table</title>
+</head>
+<body>
+
+<table border="1">
+<tr>
+<th>Sr.No</th>
+<th>Name</th>
+<th>Email</th>
+</tr>
+
+<tr><td>1</td><td>Rahul</td><td>rahul@gmail.com</td></tr>
+<tr><td>2</td><td>Amit</td><td>amit@gmail.com</td></tr>
+<tr><td>3</td><td>Priya</td><td>priya@gmail.com</td></tr>
+<tr><td>4</td><td>Neha</td><td>neha@gmail.com</td></tr>
+<tr><td>5</td><td>Rohit</td><td>rohit@gmail.com</td></tr>
+<tr><td>6</td><td>Sneha</td><td>sneha@gmail.com</td></tr>
+<tr><td>7</td><td>Kiran</td><td>kiran@gmail.com</td></tr>
+<tr><td>8</td><td>Ankit</td><td>ankit@gmail.com</td></tr>
+<tr><td>9</td><td>Pooja</td><td>pooja@gmail.com</td></tr>
+<tr><td>10</td><td>Vikas</td><td>vikas@gmail.com</td></tr>
+
+</table>
+</body>
+</html>
+
+
+resume 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Arial; background-color: #f4f4f4;}
+h1 {color: blue;}
+.box {border:2px solid black; padding:10px; background:white;}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h1>Darpan Choudhari</h1>
+<p>Email: darpanchoudhari161@gmail.com</p>
+
+<h2>Skills</h2>
+<ul>
+<li>C++</li>
+<li>HTML, CSS, JavaScript</li>
+</ul>
+
+<h2>Projects</h2>
+<p>Smart Parking System</p>
+
+</div>
+</body>
+</html>
+
+
+
+js arithmetic 
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let a = 10, b = 5;
+let op = prompt("Enter operator (+,-,*,/)");
+
+switch(op){
+case '+': alert(a+b); break;
+case '-': alert(a-b); break;
+case '*': alert(a*b); break;
+case '/': alert(a/b); break;
+default: alert("Invalid");
+}
+</script>
+
+</body>
+</html>
+
+
+form validation 
+<!DOCTYPE html>
+<html>
+<body>
+
+<form onsubmit="return validate()">
+Username: <input type="text" id="user"><br>
+Password: <input type="password" id="pass"><br>
+<input type="submit">
+</form>
+
+<script>
+function validate(){
+let u = document.getElementById("user").value;
+let p = document.getElementById("pass").value;
+
+if(u=="" || p==""){
+alert("Fill all fields");
+return false;
+}
+return true;
+}
+</script>
+
+</body>
+</html>
+
+bootstrap page 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+<a class="navbar-brand text-white">My Website</a>
+</nav>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6 bg-primary text-white">Left</div>
+<div class="col-md-6 bg-success text-white">Right</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+dynamic web page 
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="text">Hello</p>
+<button onclick="change()">Click</button>
+
+<script>
+function change(){
+document.getElementById("text").innerHTML="Updated Content";
+}
+</script>
+
+</body>
+</html>
+
+
+ajax search 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<input type="text" id="search">
+
+<script>
+$("#search").keyup(function(){
+alert("Searching: " + $(this).val());
+});
+</script>
+
+</body>
+</html>
+
+registration form php 
+
+
+<form action="process.php" method="post">
+Name: <input type="text" name="name"><br>
+Email: <input type="email" name="email"><br>
+<input type="submit">
+</form>
+
+
+
+<?php
+$name = $_POST['name'];
+$email = $_POST['email'];
+
+echo "Name: $name <br>";
+echo "Email: $email";
+?>
+
+
+php arithmetic 
+<?php
+$a = 10;
+$b = 5;
+
+echo "Add: ".($a+$b)."<br>";
+echo "Sub: ".($a-$b)."<br>";
+echo "Mul: ".($a*$b)."<br>";
+echo "Div: ".($a/$b);
+?>
+
+
+
+php greatest number 
+
+<?php
+$a = 20;
+$b = 10;
+
+if($a > $b){
+echo "A is greater";
+}else{
+echo "B is greater";
+}
+?>
+
+
